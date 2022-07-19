@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <title>Apmokėjimas</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body style="padding-top: 350px; background-color: azure;">
+    <section>
+       <div class="moonastec"></div>
+        <div class="container">
+            <form action="https://formspree.io/f/mdoyzdlr" method="POST" id="my-form">
+            <div class="form-group">
+                <label for="vardas">Vardas</label>
+                <input type="text" id="vardas" name="vardas" placeholder="pvz., Ieva" required>
+            </div>
+            <div class="form-group">
+                <label for="pavarde">Pavardė</label>
+                <input type="text" id="pavarde" name="pavarde" placeholder="pvz., Urbonaitė" required>
+            </div>
+            <div class="form-group">
+                <label for="epastas">E. paštas</label>
+                <input type="email" id="epastas" name="epastas" placeholder="pvz., ievakasparav@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="pasirinkimas">Pasirinkite prekę</label>
+                <br>
+                <select name="preke" id="preke" required>
+                <option value="fidget toy">Karviukas. Fidget toy 10 ct</option>
+                <option value="photo">Photo. clouds 15 ct</option>
+                <option value="scrubas">Sugar scrub 50 ct</option>
+                <option value="auskarai">Cloud earrings 80 ct</option>
+                <option value="lipdukas">Octopus sticker 15 ct</option>
+                <option value="meile">Tetos meilė 2 €</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="kiekis">Kiekis</label>
+                <br>
+                <select name="kiekis" id="kiekis" required>
+                <option value="vienas">1</option>
+                <option value="du">2</option>
+                <option value="trys">3</option>
+                <option value="keturi">4</option>
+                <option value="penki">5</option>
+                <option value="sesi">6</option>
+                <option value="septyni">7</option>
+                <option value="astuoni">8</option>
+                <option value="devyni">9</option>
+                <option value="desimt">10</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="pristatymas">Pristatymo būdas:</label>
+                <br>
+                <select name="pristatymas" id="pristatymas" required>
+                <option value="omniva">Omniva paštomatas - 2.5 Eur</option>
+                <option value="dpd-pastomatas">DPD paštomatas - Nuo 2 Eur</option>
+                <option value="dpd-kurjeris">DPD kurjeris - Nuo 5 Eur</option>
+                <option value="atsiimti">Atsiimti pačiam (atsiėmimo adresą gausite su patvirtinimo laišku) - nemokamai</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="dovana">Supakuoti kaip dovaną (+10 ct)</label>
+                <br>
+                <select name="dovana" id="dovana" required>
+                <option value="ne">Ne</option>
+                <option value="taip">Taip</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="pastabos">Papildomos pastabos ir klausimai (nebūtina)</label>
+                <textarea name="pastabos" id="pastabos" cols="25" rows="8" placeholder="pvz., Kada gausiu prekę?"></textarea>
+            </div>
+              <div>
+               <label class="switch">
+                  <input type="checkbox" required>
+                  <span class="slider round">Sutinku su <a href="taisykles.html">pirkimo taisyklėmis</a></span>
+                </label>
+                </div>
+                <button type="submit" style="opacity: 0.3; cursor: default; pointer-events: none;"><b>Toliau</b></button>
+                <p style="text-align: center; position: absolute; margin-top: -48px; margin-left: 170px;">Funkcija išjungta.</p>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

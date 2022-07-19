@@ -1,0 +1,420 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+body{
+    background-color: azure;
+    height: 150vh;
+}
+.grizti img{
+    width: 80px;
+}
+.grizti div{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.grizti div:hover{
+    background-color: darkgray;
+}
+.grizti a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.grizti p{
+    width: 200px;
+    background-color: #fff;
+    height: 50px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 0;
+}
+.grizti a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.pirkti p{
+    width: 200px;
+    background-color: #fff;
+    height: 50px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+}
+.pirkti p:hover{
+    background-color: darkgray;
+}
+.pirkti div:hover{
+    background-color: darkgray;
+}
+.pirkti a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.pirkti div{
+    width: 200px;
+    background-color: #fff;
+    height: 50px;
+    margin: 10px 15px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+.pirkti div img{
+    width: 60px;
+}
+.pirkti h1{
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    margin-bottom: 50px;
+}
+.pirkti p{
+    width: 200px;
+    background-color: #fff;
+    height: 50px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+.pirkti p:hover{
+    background-color: darkgray;
+}
+.pirkti a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.pirmas{
+    display: inline-block;
+    width: 24%;
+    height: 55vh;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.pirmas:hover{
+    box-shadow: 2px 2px 5px;
+}
+.pirmas img{
+    width: 150px;
+    height: 150px;
+}
+.pirmas p{
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+a p{
+    width: 200px;
+    background-color: azure;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+}
+.pirmas a p:hover{
+    background-color: darkgray;
+}
+.pirmas a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.antras{
+    display: inline-block;
+    width: 24%;
+    height: 55vh;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.antras:hover{
+    box-shadow: 2px 2px 5px;
+}
+.antras img{
+    width: 150px;
+    height: 150px;
+}
+.antras p{
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.antras a p:hover{
+    background-color: darkgray;
+}
+.antras a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.trecias{
+    display: inline-block;
+    width: 24%;
+    height: 55vh;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.trecias:hover{
+    box-shadow: 2px 2px 5px;
+}
+.trecias img{
+    width: 150px;
+    height: 150px;
+}
+.trecias p{
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.trecias a p:hover{
+    background-color: darkgray;
+}
+.trecias a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.ketvirtas{
+    display: inline-block;
+    width: 24%;
+    height: 55vh;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.ketvirtas:hover{
+    box-shadow: 2px 2px 5px;
+}
+.ketvirtas img{
+    width: 150px;
+    height: 150px;
+}
+.ketvirtas p{
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.ketvirtas a p:hover{
+    background-color: darkgray;
+}
+.ketvirtas a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.penktas{
+    display: inline-block;
+    width: 24%;
+    height: 55vh;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding-top: 50px;
+}
+.penktas:hover{
+    box-shadow: 2px 2px 5px;
+}
+.penktas img{
+    width: 150px;
+    height: 150px;
+}
+.penktas p{
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.penktas a p:hover{
+    background-color: darkgray;
+}
+.penktas a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.sestas{
+    display: inline-block;
+    width: 24%;
+    height: 55vh;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 5px;
+    padding-top: 50px;
+    margin-left: 15px;
+}
+.sestas:hover{
+    box-shadow: 2px 2px 5px;
+}
+.sestas img{
+    width: 150px;
+    height: 150px;
+}
+.sestas p{
+    margin: 10px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.sestas a p:hover{
+    background-color: darkgray;
+}
+.sestas a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 780px){
+    body{
+        height: 350vh;
+    }
+    div{
+        display: block;
+    }
+    .pirkti div{
+        position: static;
+    }
+    .grizti div{
+        position: static;
+    }
+    .pirmas{
+        display: block;
+        width: 70%;
+        margin: 50px;
+        height: 55vh;
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+    .antras{
+        display: block;
+        width: 70%;
+        margin: 50px;
+        height: 55vh;
+        margin-left: 20px;
+    }
+    .trecias{
+        display: block;
+        width: 70%;
+        margin: 50px;
+        height: 55vh;
+        margin-left: 20px;
+    }
+    .ketvirtas{
+        display: block;
+        width: 70%;
+        margin: 50px;
+        height: 55vh;
+        margin-left: 20px;
+    }
+    .penktas{
+        display: block;
+        width: 70%;
+        margin: 50px;
+        height: 55vh;
+        margin-left: 20px;
+    }
+    .sestas{
+        display: block;
+        width: 70%;
+        margin: 50px;
+        height: 55vh;
+        margin-left: 20px;
+    }
+    .pirmas p{
+        margin: 0 auto;
+        width: 100px;
+    }
+    .antras p{
+        margin: 0 auto;
+        width: 100px;
+    }
+    .trecias p{
+        margin: 0 auto;
+        width: 100px;
+    }
+    .ketvirtas p{
+        margin: 0 auto;
+        width: 100px;
+    }
+    .penktas p{
+        margin: 0 auto;
+        width: 100px;
+    }
+    .sestas p{
+        margin: 0 auto;
+        width: 100px;
+    }
+}

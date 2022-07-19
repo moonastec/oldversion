@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilis</title>
+    <link rel="shortcut icon" type="image/jpg" href="photos/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profilis.css" type="text/css">
+</head>
+<body>
+   <style>
+              .form-container2 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+/* When the textarea gets focus, do something */
+.form-container2 textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container2 .btn {
+  background-color: indianred;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 1;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add a red background color to the cancel button */
+.form-container2 .cancel {
+  background-color: darkseagreen;
+    transition: 0.5s;
+    font-size: 20px;
+}
+      .form-container2 .btn:hover{
+          background-color: orangered;
+          color: black;
+      }
+/* Add some hover effects to buttons */
+.form-container2 .cancel:hover {
+  background-color: springgreen;
+}
+      .open-button2 {
+  background-color: lightgray;
+  color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  position: fixed;
+  bottom: 20px;
+  left:  20px;
+  width: 200px;
+    height: 60px;
+    transition: .5s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+      .chat-popup2 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+       .open-button2:hover{
+            background-color: gray;
+          color: white;
+      }
+      section{
+        background-color: azure;
+      }
+      @media only screen and (max-width: 940px){
+          .open-button2{
+            margin: -10px auto;
+              width: 90%;
+              height: 60px;
+              left: 5px;
+              right: 5px;
+              box-shadow: 5px 5px 10px;
+          }
+              .open-button{
+              width: 90%;
+              height: 60px;
+              left: 5px;
+              right: 5px;
+                  margin: 55px auto;
+                  box-shadow: 5px 5px 10px;
+          }
+    </style>
+    <div class="nuotrauka"></div>
+    <h1>Darbuotojas: Moon_astec&#9789;</h1>
+    <h2>Kodas: @4338</h2>
+    <div class="divos">
+    <div class="divas"><a href="istaisyti-darbai.html"><p>Ištaisyti darbai</p></a></div>
+   <div class="divas"><a href="apmokejimai.html"><p>Gauti apmokėjimai</p></a></div>
+   <div class="divas"><a href="duomenys.html"><p>Asmeniniai duomenys</p></a></div>
+   <div class="divas"><a href="darbas.html"><p>Grįžti į darbo puslapį</p></a></div>
+   <button class="open-button2" onclick="openForm2()">Atsijungti</button>
+       <div class="chat-popup2" id="myForm2">
+  <form action="prisijungimas.html" class="form-container2">
+  <h1 style="margin-bottom: 10px; font-size: 20px;">Atsijungti</h1>
+   <p style="margin-bottom: 10px; font-size: 13px;">Ar tikrai norite atsijungti?</p>
+
+
+    <button type="submit" class="btn">Atsijungti</button>
+    <button type="button" class="btn cancel" onclick="closeForm2()">Atšaukti</button>
+  </form>
+</div>
+   </div>
+   <p style="margin-top: 20px; margin-bottom: 50px;">&copy; Moon_astec&#9789; Work dokumentų tvarkykla 2021</p>
+   <script>
+    function openForm2() {
+  document.getElementById("myForm2").style.display = "block";
+}
+
+function closeForm2() {
+  document.getElementById("myForm2").style.display = "none";
+}
+</script>
+</body>
+</html>

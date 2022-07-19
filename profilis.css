@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: ;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.nuotrauka{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-image: url(photos/logo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid darkgray;
+    margin: 50px auto;
+}
+.divas{
+    width: 250px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    transition: .3s;
+}
+.divas p{
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divas a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+.divas:hover{
+    background-color: darkgray;
+}
+.divos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 940px){
+    .divos{
+        display: block;
+    }
+    .divas{
+        width: 200px;
+    }
+}

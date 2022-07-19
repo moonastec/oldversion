@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Prisijungimas (tik darbuotojams)</title>
+    <link rel="shortcut icon" type="image/jpg" href="photos/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: azure; text-align: center; font-family: 'Poppins', sans-serif; width: 100%;">
+   <style>
+    .form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; text-align: center;
+    animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.form-group input, .form-group textarea{
+    width: 90%;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid darkgray;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF;
+    margin-top: 50px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.btn-login{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+       h3{
+            animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+       }
+       h2{
+           animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+       }
+       h1{
+               animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+       }
+div a{
+    color: black;
+    text-decoration: none;
+}
+       .moonastec{
+           width: 200px;
+           height: 200px;
+           background-image: url(photos/logo.jpg);
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+           margin: 30px auto;
+           animation-name: sukis;
+           animation-duration: 2s;
+           animation-timing-function: linear;
+       }
+       @keyframes sukis{
+    0%{
+        transform: rotate(1800deg);
+        background-image: url(photos/wait.png);
+    }
+    99%{
+        background-image: url(photos/wait.png);
+    }
+    100%{
+        background-image: url(photos/wait.png);
+    }
+}
+       .ispejimas{
+            font-size: 12px;
+           margin: 0 auto;
+           margin-bottom: 10px;
+       }
+       #text{
+           color: red;
+           display: none;
+       }
+@keyframes pradink{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    95%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+       @media only screen and (max-width: 640px){
+           .container{
+               max-width: 400px;
+           }
+       }
+    </style>
+    <div class="moonastec"></div>
+    <h3>Moon_astec&#9789; dokumentų tvarkykla</h3>
+    <h1>Prisijungimas</h1>
+    <h2 style="color: darkgray; margin: -15px auto;">Tik darbuotojams</h2>
+<!--    <img src="photos/login.png" alt="Prisijungimo kodai" style="width: 400px; height: 400px;">-->
+  <form>
+   <div class="container">
+    <div class="form-group">
+        <label for="epastas">E. Paštas</label>
+            <input name="pastas" id="myInput" type="email" aria-required="true">
+        <label for="message">Slaptažodis</label>
+            <input name="slaptazodis" type="password" id="myInput2" aria-required="true">
+        <input type="button" class="btn-login" onclick="check(this.form)" value="Prisijungti">
+    </div>
+    <p id="text" class="ispejimas">Didžiosios raidės (Caps Lock) yra įjungtos</p>
+    <p style="font-size: 13px;"><a href="naujas-slaptazodis.html" style="text-decoration: underline;">Pamiršau slaptažodį</a></p>
+    </div>
+    </form>
+    <a href="index.html" style="color: black; text-decoration: none;"><p style="background-color: #fafafa; width: 200px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 10px; margin: 0 auto; margin-top: 50px; animation-name: pradink;
+    animation-duration: 2s;
+    animation-timing-function: linear; margin-bottom: 60px;">Pagrindinis puslapis</p></a>
+    
+    
+    
+    
+    <script>
+        function check(form)
+        {
+            if(form.pastas.value == "moon.astec@gmail.com" && form.slaptazodis.value == "MoonastecADMIN")
+                {
+                    window.open('darbas.html')
+                }
+            else
+                {
+                    alert("Patikrinkite duomenis ir bandykite dar kartą.")
+                }
+        }
+        var input = document.getElementById("myInput");
+var text = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+    </script>
+</body>
+</html>

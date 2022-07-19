@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Payment</title>
+    <link rel="shortcut icon" type="image/png" href="eng-favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <section>
+       <div class="moonastec"></div>
+        <div class="container">
+            <form action="https://formspree.io/f/mdoyzdlr" method="POST" id="my-form">
+            <div class="form-group">
+                <label for="vardas">First name</label>
+                <input type="text" id="name" name="name" placeholder="e. g. Liam" required>
+            </div>
+            <div class="form-group">
+                <label for="pavarde">Last name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="e. g. Smith" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="e. g. ievakasparav@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="pasirinkimas">Select the item</label>
+                <br>
+                <select name="item" id="preke" required>
+                <option value="fidget toy">Cowy. Fidget toy 10 ct</option>
+                <option value="photo">Photo. clouds 15 ct</option>
+                <option value="scrub">Sugar scrub 50 ct</option>
+                <option value="earrings">Cloud earrings 80 ct</option>
+                <option value="sticker">Octopus sticker 15 ct</option>
+                <option value="love">Aunt's love 2 €</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="kiekis">Amount</label>
+                <br>
+                <select name="amount" id="kiekis" required>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="shipping">Shipping method:</label>
+                <br>
+                <select name="shipping" id="pristatymas" required>
+                <option value="omniva">Omniva parcel machine - 2.5 Eur</option>
+                <option value="dpd-pastomatas">DPD parcel machine - From 2 Eur</option>
+                <option value="dpd-kurjeris">DPD courier - From 5 Eur</option>
+                <option value="pickup">Pickup yourself (you will get the pickup adress with the confirmation email) - free</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="present">Ship as a present (+10 ct)</label>
+                <br>
+                <select name="present" id="present" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes and questions (not required)</label>
+                <textarea name="pastabos" id="pastabos" cols="25" rows="8" placeholder="e. g. When will I get the item?"></textarea>
+            </div>
+               <div>
+               <label class="switch">
+                  <input type="checkbox" required>
+                  <span class="slider round">I agree with <a href="terms.html">terms of purchase</a></span>
+                </label>
+                </div>
+                <button type="submit"><b>Next</b></button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+    <script src="./eng-main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: azure;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+p{
+    margin: 50px auto;
+    width: 200px;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+}
+.pirmas:hover{
+    background-color: darkseagreen;
+}
+.antras:hover{
+    background-color: red;
+}
+.divo img{
+    width: 80px;
+}
+.divo{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.divo:hover{
+    background-color: red;
+}
+.divu img{
+    width: 80px;
+}
+.divu{
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.divu:hover{
+    background-color: darkseagreen;
+}

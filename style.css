@@ -1,0 +1,272 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*START*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: floralwhite;
+}
+ul{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: azure;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    background-color: darkgray;
+    margin: 5px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+li:hover{
+    color: black;
+}
+nav img{
+    width: 70px;
+    height: 72px;
+    display: inline-block;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: azure;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+}
+header{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(200,200,200);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border-radius: 0 0 10px 10px;
+}
+header h1{
+    font-size: 50px;
+    margin: 20px;
+    margin-top: 200px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+header h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: black;
+    margin: 20px;
+}
+header h6{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+}
+main p{
+    color:rgb(225,225,225);
+    font-family: 'Ubuntu', sans-serif; 
+}
+section{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+/*apie*/
+.apie{
+    background-color: rgb(205,205,205);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+.apie h3{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    margin-bottom: 70px;
+    padding-top: 70px;
+}
+.apie p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 100px; 
+    color: rgb(105, 105, 105);
+}
+/*kalba*/
+.kalba{
+    background-color: rgb(205,205,205);
+    text-align: center;
+    padding: 20px;
+}
+.kalba h1{
+    width: 165px;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: azure;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.kalba h1:hover{
+    background-color: darkgray;
+}
+.kalba a{
+    text-decoration: none;
+    color: black;
+}
+/*parduotuve*/
+.parduotuve{
+    height: auto;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(205,205,205);
+    justify-content: center;
+    align-items: center;
+}
+.parduotuve h1{
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    margin-bottom: 50px;
+}
+.parduotuve p{
+    width: 200px;
+    background-color: azure;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.5s;
+}
+.parduotuve p:hover{
+    background-color: darkgray;
+}
+.parduotuve a{
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+/*facebook*/
+.kontaktai{
+    text-align: center;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(205,205,205);
+    margin-bottom: 50px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 70px;
+}
+h4{
+    padding: 20px;
+}
+.tvarkykla{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    color: black;
+}
+.tvarkykla a{
+    text-decoration: none;
+    color: slateblue;
+}
+.tvarkykla p{
+    color: slateblue;
+}
+@media only screen and (max-width: 640px){
+    nav{
+        height: 60px;
+    }
+    ul{
+        height: 60px;
+        width: 81%;
+        padding-left: 40px;
+    }
+    li{
+        height: 50px;
+        width: 80px;
+    }
+    nav img{
+        width: 55px;
+        height: 55px;
+    }
+    nav{
+        padding-left: 5px;
+    }
+}
